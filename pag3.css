@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: content-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    /* align-items: right;
+    justify-content: center; */
+    position: relative;
+    overflow-x: hidden;
+}
+
+.image{
+    width:100em;
+    height:210em;
+    position: relative;
+    background:url('pag3.jpg');
+    background-size:contain;
+    z-index: 1;
+  }
+
+/* HEADING */
+  body h1{
+    color: rgb(101, 130, 153);
+    position:absolute;
+    padding-left: 50px;
+    font-family: "Kode Mono", monospace;
+    font-size: 50px;
+    font-weight: 500;
+    z-index: 2;
+
+}
+/*PARAGRAPH*/
+body p
+{   color: rgb(255, 255, 255);
+    position: absolute;
+    padding: 60px 50px;
+    line-height: 1.5em;
+    font-family: "Kode Mono", monospace;
+    font-size: 16px;
+    font-weight: 300;
+    z-index: 2;
+}
+

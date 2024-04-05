@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Poetry || My ten Hours (1) </title>
+  <link rel="stylesheet" type="text/css" href="pag1.css">
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>-->
+</head>
+
+<body>
+  <img src="pag1.jpg">
+  <!-- PARAGRAPH -->
+  <div>
+    <p1>
+      10 hours <br>
+      that leafless tree <br>
+      that flawless reflection in the puddle <br>
+      the grey midwinters; didn't feel cold at all. <br>
+      hazy scotch mist making out with the windowpane beside me <br>
+      the urge to caress that flaunted palm.
+    </p1>
+  </div>
+  <div class="container">
+    <div class="bubbles">
+      <span style="--i:11;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:24;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:23;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:16;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:20;"></span>
+      <span style="--i:22;"></span>
+      <span style="--i:25;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:21;"></span>
+      <span style="--i:15;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:11;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:24;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:23;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:16;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:20;"></span>
+      <span style="--i:22;"></span>
+      <span style="--i:25;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:21;"></span>
+      <span style="--i:15;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:15;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:11;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:24;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:15;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:11;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:24;"></span>
+      <span style="--i:23;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:16;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:20;"></span>
+      <span style="--i:22;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:16;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:20;"></span>
+      <span style="--i:22;"></span>
+    </div>
+  </div>
+
+    <href="#" id="btn" onclick="navigateTo('pag2.html')"> &nbsp; &nbsp; ▶︎ &nbsp; &nbsp; </a>
+
+      <!--IMAGE-->
+      <!--<div class="image"></div>-->
+
+      <!--CURSOR-->
+      <div class="cursor"></div>
+</body>
+
+
+<!--CURSOR SCRIPT-->
+<script type="text/javascript">
+  const cursor = document.querySelector(".cursor");
+  var timeout;
+  //follow cursor on mousemove 
+  document.addEventListener("mousemove", (e) => {
+    let x = e.pageX;
+    let y = e.pageY;
+
+    cursor.style.top = y + "px";
+    cursor.style.left = x + "px";
+    cursor.style.display = "block";
+
+
+    // cursor effects on mouse stopped 
+    function mouseStopped() {
+      cursor.style.display = "none";
+    }
+    clearTimeout(timeout);
+    timeout = setTimeout(mouseStopped, 1000);
+  });
+
+  //cursor effects on mouseout 
+  document.addEventListener("mouseout", () => {
+    cursor.style.display = "none";
+  });
+</script>
+
+<script src="script.js"></script>
+
+</html>
