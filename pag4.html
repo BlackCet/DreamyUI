@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poetry || My ten Hours (3)</title>
+    <link rel="stylesheet" type="text/css" href="pag4.css">
+</head>
+
+<body>
+    <div class="image"></div>
+    <div class="light"></div>
+    <script type="text/javascript">
+        var pos = document.documentElement;
+        pos.addEventListener('mousemove',e => {
+            pos.style.setProperty('--x', e.clientX + 'px')
+            pos.style.setProperty('--y', e.clientY + 'px')
+        })
+    </script>
+    <div>
+        <p1>
+            Illusioning yourself<br>
+            into feeling secure in this otherwise uncertainty<br>
+            Opening windows on certain truths, <br>
+            concealing others behind heavy curtains <br>
+            theorizing a frictionless life is equal to subtle death. <br>
+            <br>
+            Scared of being known. So now tell me your greatest fear<br>
+            Will you trust me? What is your favourite color? <br>
+            because it's rayless, Everthing is same in the dark.
+        </p1>
+    </div>
+    <href="#" id="btn" onclick="navigateTo('pag5.html')"> &nbsp; &nbsp; ▶︎ &nbsp; &nbsp; </a>
+        <div class="cursor"></div>
+
+</body>
+<!--CURSOR SCRIPT-->
+<script type="text/javascript">
+    const cursor = document.querySelector(".cursor");
+    var timeout;
+    //follow cursor on mousemove 
+    document.addEventListener("mousemove", (e) => {
+        let x = e.pageX;
+        let y = e.pageY;
+
+        cursor.style.top = y + "px";
+        cursor.style.left = x + "px";
+        cursor.style.display = "block";
+
+
+        // cursor effects on mouse stopped 
+        function mouseStopped() {
+            cursor.style.display = "none";
+        }
+        clearTimeout(timeout);
+        timeout = setTimeout(mouseStopped, 1000);
+    });
+
+    //cursor effects on mouseout 
+    document.addEventListener("mouseout", () => {
+        cursor.style.display = "none";
+    });
+</script>
+
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poetry || My ten Hours (4)</title>
+    <link rel="stylesheet" href="pag5.css">
+</head>
+
+<body>
+    <!-- <div class="light"></div> -->
+    <div class="image"></div>
+    <div class="Wrap">
+        <div id="cont2">
+            <div>
+                <p1>
+                    The self conscious yet comfortable silence; <br>
+                    symphonies ye played; caught me off guarded; knocked; <br>
+                    chocolates and coffee, well woven happenstance spell. <br>
+                    frisky exchanges, quick remarks, as if deflecting notes in secrecy. <br>
+                    Crimsoning the bleak back home, with a heart displaced <br>
+                    wondered if you'll ever realise, you got me mesmerized so hard. <br>
+                    Wishing it was the very first rhyme, <br>
+                    not where this poem does end. <br>
+                    My ink will witness your cue, till pending your fancy remains.<br>
+                    Some bullets were being held back as you were leaving the game.
+                </p1>
+            </div>
+        </div>
+        <div id="container">
+        </div>
+        <div id="cont3">
+            <a>
+                <href="#" id="btn" onclick="navigateTo('pag3.html')"> &nbsp; &nbsp; ▶︎ &nbsp; &nbsp;
+            </a>
+        </div>
+    </div>
+    
+    <div class="cursor"></div>
+
+    <script src="pag5.js"></script>
+    <script src="script.js"></script>
+</body>
+
+<!--CURSOR SCRIPT-->
+<script type="text/javascript">
+    const cursor = document.querySelector(".cursor");
+    var timeout;
+    //follow cursor on mousemove 
+    document.addEventListener("mousemove", (e) => {
+        let x = e.pageX;
+        let y = e.pageY;
+
+        cursor.style.top = y + "px";
+        cursor.style.left = x + "px";
+        cursor.style.display = "block";
+
+
+        // cursor effects on mouse stopped 
+        function mouseStopped() {
+            cursor.style.display = "none";
+        }
+        clearTimeout(timeout);
+        timeout = setTimeout(mouseStopped, 1000);
+    });
+
+    //cursor effects on mouseout 
+    document.addEventListener("mouseout", () => {
+        cursor.style.display = "none";
+    });
+</script>
+
+</html>
