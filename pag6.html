@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poetry || My ten Hours (5)</title>
+    <link rel="stylesheet" href="pag6.css">
+</head>
+<body>
+    <div>
+        <p1>
+            You got me so freeflowing; though in a merry go round<br>
+            angling in snippets, hanging me imagining<br>
+            Is that a craft you perfected? or are you being unalloyed? <br>
+            All along you made me keep a count <br>
+            whether it be of script, skids or the verse. <br>
+        </p1>
+    </div>
+  <img class="bg" src="pag6.gif" height="100%" width="100%">
+
+  <href="#" id="btn" onclick="navigateTo('pag3.html')"> &nbsp; &nbsp; ▶︎ &nbsp; &nbsp; </a>
+  <div class="cursor"></div>
+</body>
+
+<script type="text/javascript">
+    const cursor = document.querySelector(".cursor");
+    var timeout;
+    //follow cursor on mousemove 
+    document.addEventListener("mousemove", (e) => {
+        let x = e.pageX;
+        let y = e.pageY;
+
+        cursor.style.top = y + "px";
+        cursor.style.left = x + "px";
+        cursor.style.display = "block";
+
+
+        // cursor effects on mouse stopped 
+        function mouseStopped() {
+            cursor.style.display = "none";
+        }
+        clearTimeout(timeout);
+        timeout = setTimeout(mouseStopped, 1000);
+    });
+
+    //cursor effects on mouseout 
+    document.addEventListener("mouseout", () => {
+        cursor.style.display = "none";
+    });
+</script>
+<script src="script.js"></script>
+</html>

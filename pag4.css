@@ -59,6 +59,8 @@ body{
     border-radius: 50%;
     }
     
+
+    /* NAVIGATION BUTTON */
     #btn {
         text-decoration: none;
         display: inline-block;
