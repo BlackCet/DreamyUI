@@ -6,30 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> Poetry || My ten Hours </title>
+    <title> Finesse || My creative hours </title>
     <link rel="stylesheet" type="text/css" href="start.css">
-    <script src="script.js"></script>
+    <script  src="../script.js"></script>
     <script src="snowfall.min.js"></script>
 </head>
 
 <body>
     <img src="start.jpg">
 
-    <h1>My Ten Hours!</h1>
-    <a href="#" id="btn" onclick="navigateTo('pag1.html')"> ♫ </a>
-
-    <!--<p1 id="text"> Seven in the morning. It's been 6 days past New year...<br>
-            "Mine is M2 58. And yours?" <br>
-             "57" <br>
-             "Oh!" <br>
-            What a coincidence. Fate. </p1>-->
-
-    <!--<div class="container">
-            <p1> Seven in the morning. It's been 6 days past New year...<br>
-                <span class="auto-type">
-                </span>
-            </p1>
-        </div>-->
+    <h1>The Wand Chooses!</h1>
+    <a href="#" id="btn" onclick="navigateTo('../page1/pag1.html')"> ♫ </a>
 
     <div id="typedtext"></div>
     <div class="cursor"></div>
@@ -39,7 +26,7 @@
 <script type="text/javascript">
     const cursor = document.querySelector(".cursor");
     var timeout;
-    //follow cursor on mousemove 
+   
     document.addEventListener("mousemove", (e) => {
         let x = e.pageX;
         let y = e.pageY;
@@ -49,7 +36,7 @@
         cursor.style.display = "block";
 
 
-        // cursor effects on mouse stopped 
+        
         function mouseStopped() {
             cursor.style.display = "none";
         }
@@ -57,7 +44,7 @@
         timeout = setTimeout(mouseStopped, 1000);
     });
 
-    //cursor effects on mouseout 
+
     document.addEventListener("mouseout", () => {
         cursor.style.display = "none";
     });
@@ -72,19 +59,19 @@
 
 <script>
 
-    var aText = new Array("Seven in the morning. It's been 6 days past New year...",
-        "\"Mine is M2 58. And yours?\"",
-        "\"57\"",
+    var aText = new Array("Seven in the morning. The shop smelled of old wood and magic...",
+        "\"Mine is Hawthorn, 12 inches. And yours?\"",
+        "\"12 ¾, Elm\"",
         "\"Oh!\"",
         "What a coincidence. Fate.");
-    var iSpeed = 150; // time delay of print out
-    var iIndex = 0; // start printing array at this posision
-    var iArrLength = aText[0].length; // the length of the text array
-    var iScrollAt = 20; // start scrolling up at this many lines
+    var iSpeed = 150; 
+    var iIndex = 0; 
+    var iArrLength = aText[0].length; 
+    var iScrollAt = 20; 
 
-    var iTextPos = 0; // initialise text position
-    var sContents = ''; // initialise contents variable
-    var iRow; // initialise current row
+    var iTextPos = 0;
+    var sContents = ''; 
+    var iRow;
 
     function typewriter() {
         sContents = ' ';
@@ -109,16 +96,4 @@
 
     typewriter();
 </script>
-
-
-
-<!--<script  src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"> </script>
-    <script>
-        var Typed= new Typed(".auto-type",{ 
-            strings:["\"Mine is M2 58. And yours?\" \n \"57\" \n \"Oh!\" \n"],
-            typeSpeed:200,
-            backSpeed:50,  
-        })
-    </script>-->
-
 </html>

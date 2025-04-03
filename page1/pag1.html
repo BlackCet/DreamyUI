@@ -6,10 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title> Poetry || My ten Hours (1) </title>
+  <title> Finesse || My creative hours-1 </title>
   <link rel="stylesheet" type="text/css" href="pag1.css">
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>-->
 </head>
 
 <body>
@@ -17,12 +15,12 @@
   <!-- PARAGRAPH -->
   <div>
     <p1>
-      10 hours <br>
-      that leafless tree <br>
-      that flawless reflection in the puddle <br>
-      the grey midwinters; didn't feel cold at all. <br>
-      hazy scotch mist making out with the windowpane beside me <br>
-      the urge to caress that flaunted palm.
+      That quiet night. <br>
+      That golden glow in the corridor. <br>
+      The soft whispers; secrets hidden in stone. <br>
+      Faint wandlight tracing spells in the air.<br>
+      Hazy moonbeams dancing on the enchanted glass. <br>
+      tThe urge to hold that fleeting warmth.
     </p1>
   </div>
   <div class="container">
@@ -84,12 +82,9 @@
     </div>
   </div>
 
-    <href="#" id="btn" onclick="navigateTo('pag2.html')"> &nbsp; &nbsp; ▶︎ &nbsp; &nbsp; </a>
+    <href="#" id="btn" onclick="navigateTo('../page2/pag2.html')"> &nbsp; &nbsp; ▶︎ &nbsp; &nbsp; </a>
 
-      <!--IMAGE-->
-      <!--<div class="image"></div>-->
-
-      <!--CURSOR-->
+     
       <div class="cursor"></div>
 </body>
 
@@ -98,7 +93,7 @@
 <script type="text/javascript">
   const cursor = document.querySelector(".cursor");
   var timeout;
-  //follow cursor on mousemove 
+  
   document.addEventListener("mousemove", (e) => {
     let x = e.pageX;
     let y = e.pageY;
@@ -108,7 +103,7 @@
     cursor.style.display = "block";
 
 
-    // cursor effects on mouse stopped 
+    
     function mouseStopped() {
       cursor.style.display = "none";
     }
@@ -116,12 +111,12 @@
     timeout = setTimeout(mouseStopped, 1000);
   });
 
-  //cursor effects on mouseout 
+  
   document.addEventListener("mouseout", () => {
     cursor.style.display = "none";
   });
 </script>
 
-<script src="script.js"></script>
+<script src="../script.js"></script>
 
 </html>

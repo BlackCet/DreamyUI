@@ -183,6 +183,7 @@ body div p1:hover{
     position: relative;
     width: 20px;
     height: 20px;
+    aspect-ratio: 1 / 1;
     background: #eea2f5;
     margin:0 4px;
     border-radius: 50%;

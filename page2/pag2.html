@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Poetry || My ten Hours (2) </title>
+    <title> Finesse || My creative hours(2) </title>
     <link rel="stylesheet" type="text/css" href="pag2.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
@@ -12,35 +12,27 @@
 
 <body>
     <div>
-        <p1>
-            Closed eyes; I see shadows; the obscurity <br>
-            tempting me fathomlessly into your gravity<br>
-            luring me to enter your trap doors<br>
-            whispering you are hiding deep within this darkness,<br>
-            dominating the control over ye and your matrix.
-        </p1>
+        <p1>  
+            Closed eyes; I see broomsticks; the sky <br>  
+            pulling me weightless into the night <br>  
+            leading me past the castle towers <br>  
+            laughter and spells echo through the halls, <br>  
+            filling the world with wonder and magic.  
+        </p1>  
+        
       </div>  
        <div class="item"></div>
-      <!--<div>
-        <p2>
-            Illusioning yourself<br>
-             into feeling secure in this otherwise uncertainty<br>
-            Opening windows on certain truths, <br>
-            concealing others behind heavy curtains <br>
-            theorizing a frictionless life is equal to subtle death. 
-        </p2>
-      </div>-->
-      <!--IMAGE-->
+      
       <div class="image"></div>
-      <href="#" id="btn" onclick="navigateTo('pag4.html')"> &nbsp; &nbsp; ▶︎ &nbsp; &nbsp; </a>
+      <href="#" id="btn" onclick="navigateTo('../pag4/pag4.html')"> &nbsp; &nbsp; ▶︎ &nbsp; &nbsp; </a>
       <div class="cursor"></div>
 </body>
 
-<!--CURSOR SCRIPT-->
+
 <script type="text/javascript">
   const cursor = document.querySelector(".cursor");
    var timeout; 
-  //follow cursor on mousemove 
+ 
   document.addEventListener("mousemove", (e) => {
       let x = e.pageX;
       let y = e.pageY;
@@ -50,7 +42,7 @@
       cursor.style.display = "block";
 
 
-      // cursor effects on mouse stopped 
+     
       function mouseStopped() {
           cursor.style.display="none";
       }
@@ -58,11 +50,11 @@
       timeout=setTimeout(mouseStopped,1000);
   });
 
-  //cursor effects on mouseout 
+  
   document.addEventListener("mouseout", () => {
       cursor.style.display = "none";
   });
   </script>
 
-<script src="script.js"></script>
+<script src="../script.js"></script>
 </html>
