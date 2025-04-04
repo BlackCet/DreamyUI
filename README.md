@@ -17,7 +17,7 @@ A collection of aesthetic frontend effects and animations built with **Vanilla J
 I'm exploring ways to make web pages feel more **alive** through motion and design. Think of it as a **playground for elegant UI/UX magic**. I was just being **creative**, bringing my ideas into **reality**—experimenting with visuals, effects, and interactions that capture attention and emotion. 
 
 ## 📸 Preview  
-Stay tuned for visuals & demos!  
+https://dreamyui.onrender.com
 
 ## 📂 Tech Stack  
 - **HTML5** 🏗️  
