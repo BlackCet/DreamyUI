@@ -6,7 +6,6 @@ A collection of aesthetic frontend effects and animations built with **Vanilla J
 - **Smooth animations & fluid transitions** 🎭  
 - **Subtle hover effects with depth** 🎨  
 - **Glassmorphism & Frosted UI aesthetics** ❄️  
-- **Parallax scrolling for immersive depth** 🌌  
 - **Cursor transformations with elegant trails** 🖱️  
 - **Soothing snowfall animation** ❄️✨  
 - **Ripple effects creating waves on interaction** 🌊  
